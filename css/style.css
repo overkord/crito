@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+html, body {
+  color: #191919;
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-yellow {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-yellow i {
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+.btn-yellow:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: red;
+}
+
+header {
+  background-color: #F0EFE9;
+  padding: 16px;
+}
+header .container {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .menu-bars {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  header .container .menu-bars {
+    display: none;
+  }
+}
+header .container .menu {
+  display: none;
+  flex: 1;
+}
+@media (min-width: 992px) {
+  header .container .menu {
+    display: block;
+  }
+}
+@media (min-width: 2500px) {
+  header .container {
+    max-width: 2048px;
+  }
+}
+header .container .top-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #DAD9D3;
+  padding-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  header .container .top-menu {
+    justify-content: space-between;
+  }
+}
+header .container .top-menu .contact-information {
+  display: none;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  header .container .top-menu .contact-information {
+    display: flex;
+  }
+}
+header .container .top-menu .contact-information .content-box {
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 1px solid #DAD9D3;
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+header .container .top-menu .contact-information .content-box i {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+header .container .top-menu .contact-information .content-box.last {
+  border: none;
+}
+header .container .top-menu .social-media a {
+  color: #191919;
+  font-size: 1.2rem;
+  margin-left: 8px;
+}
+header .container .top-menu .social-media a:hover {
+  color: red;
+}
+header .container .main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+header .container .main-menu nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
+}
+header .container .main-menu nav a.active {
+  font-weight: 500;
+}
+header .container .main-menu nav a.active::after, header .container .main-menu nav a:hover::after {
+  content: "";
+  font-weight: 500;
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
+}
